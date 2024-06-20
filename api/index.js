@@ -11,7 +11,7 @@ import path from "path";
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDb is connected");
   })
@@ -35,10 +35,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/post", postRoutes);
 app.use("/api/comment", commentRoutes);
 
-app.use(express.static(path.join(__dirname, "/client/dist")));
+app.use(express.static(path.join(__dirname, "/blog-mern-frontend/dist")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+  res.sendFile(
+    path.join(__dirname, "blog-mern-frontend", "dist", "index.html")
+  );
 });
 
 app.use((err, req, res, next) => {
