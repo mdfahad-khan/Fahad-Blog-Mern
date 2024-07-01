@@ -15,7 +15,7 @@ const PostCardVertical = ({ post }) => {
           <img
             src={post.image}
             alt="post cover"
-            className="h-[200px] w-[220px] hover:scale-105 object-cover  transition-all duration-300 z-20"
+            className="h-[200px] mt-2 ml-2 w-[220px] hover:scale-105 object-cover  transition-all duration-300 z-20"
           />
         </Link>
       </div>
@@ -34,6 +34,7 @@ const PostCardVertical = ({ post }) => {
 
             <span className="italic">
               {post && (post.content.length / 1000).toFixed(0)} comments
+              {console.log(post.content.length)}
             </span>
           </div>
           <p className="text-2xl font-bold line-clamp-2">{post.title}</p>

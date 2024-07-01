@@ -43,21 +43,14 @@ export default function SignIn() {
     }
   };
   return (
-    <div className="min-h-screen mt-20">
-      <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
+    <div className="min-h-screen mt-10">
+      <div className="flex p-3 max-w-3xl mx-auto bg-slate-300 flex-col rounded-sm dark:bgs  md:flex-row dark:bg-slate-800 text-black dark:text-white md:items-center gap-5">
         {/* left */}
-        <div className="flex-1">
-          <Link to="/" className="font-bold dark:text-white text-4xl">
-            <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-              Sahand's
-            </span>
-            Blog
-          </Link>
-          <p className="text-sm mt-5">
-            This is a demo project. You can sign in with your email and password
-            or with Google.
-          </p>
+
+        <div className="flex-1 hidden md:block">
+          <img src="/signin.gif" alt="contact" />
         </div>
+
         {/* right */}
 
         <div className="flex-1">
@@ -81,7 +74,7 @@ export default function SignIn() {
               />
             </div>
             <Button
-              gradientDuoTone="purpleToPink"
+              gradientDuoTone="greenToBlue"
               type="submit"
               disabled={loading}
             >
