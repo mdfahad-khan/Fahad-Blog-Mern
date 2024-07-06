@@ -2,7 +2,7 @@ import { Button } from "flowbite-react";
 
 const About = () => {
   return (
-    <div className="flex flex-col sm:flex-row p-3  justify-center items-center rounded-tl-3xl rounded-br-3xl text-center">
+    <div className="flex flex-col sm:flex-row p-3  justify-center items-center   text-center">
       <div className="flex-1 justify-center flex flex-col">
         <h2 className="text-2xl">Something About me</h2>
         <p className="text-gray-500 my-2 text-[20px] text-justify">
@@ -26,10 +26,11 @@ const About = () => {
           <div class="py-4">
             <h1 class="text-4xl font-bold">Sreemangal</h1>
             <p class="text-lg">
-              Description about Sreemangal goes here.Description about
-              Sreemangal goes here. Description about Sreemangal goes here.
-              Description about Sreemangal goes here.Description about
-              Sreemangal goes here.
+              Sreemangal is often referred to as the "Tea Capital of
+              Bangladesh." The rolling hills covered in tea bushes are a sight
+              to behold. A visit to a tea estate, like the Finlay Tea Estate, is
+              a must. You can learn about the tea-making process and enjoy a cup
+              of freshly brewed tea.
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ const PostCardVertical = ({ post }) => {
               {console.log(post.content.length)}
             </span>
           </div>
-          <p className="text-2xl font-bold line-clamp-2">{post.title}</p>
+          <p className="text-[18px] font-bold line-clamp-2">{post.title}</p>
           <div className=" pl-3 max-w-3xl mx-auto w-full post-content">
             {post && (
               <p

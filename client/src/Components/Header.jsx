@@ -54,7 +54,7 @@ export default function Header() {
         to="/"
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
-        Fahad
+        Fahad Blog
       </Link>
       <form onSubmit={handleSubmit}>
         <TextInput

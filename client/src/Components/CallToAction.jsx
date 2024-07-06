@@ -2,7 +2,7 @@ import { Button } from "flowbite-react";
 
 export default function CallToAction() {
   return (
-    <div className="flex flex-col sm:flex-row p-3 border border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center">
+    <div className="flex flex-col sm:flex-row p-3  justify-center items-center rounded-tl-3xl rounded-br-3xl text-center">
       <div className="flex-1 justify-center flex flex-col">
         <h2 className="text-2xl">Something About me</h2>
         <p className="text-gray-500 my-2 text-justify">
@@ -18,7 +18,7 @@ export default function CallToAction() {
           skills and drive innovation. I'm open to opportunities in software
           development, system analysis, and more.
         </p>
-        <Button
+        {/* <Button
           gradientDuoTone="purpleToPink"
           className="rounded-tl-xl rounded-bl-none"
         >
@@ -27,9 +27,9 @@ export default function CallToAction() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            More about myself
+           
           </a>
-        </Button>
+        </Button> */}
       </div>
       <div class="p-7 flex-1 relative group cursor-pointer">
         <img src="/fahad.jpg" alt="Sreemangal" class="w-full block" />

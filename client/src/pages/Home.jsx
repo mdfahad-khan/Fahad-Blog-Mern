@@ -134,7 +134,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/1.png" // Adjust the path based on your project structure
+                src="/fahad1.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  ml-10 mt-10    "
                 width={16} // Set your desired width
@@ -148,7 +148,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/2.png" // Adjust the path based on your project structure
+                src="/fahad2.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-24 h-32  ml-3    "
                 width={16} // Set your desired width
@@ -164,7 +164,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/1.png" // Adjust the path based on your project structure
+                src="/fahad.png" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  ml-32 mt-1    "
                 width={16} // Set your desired width
@@ -180,7 +180,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/1.png" // Adjust the path based on your project structure
+                src="/fahad3.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  ml-10 mt-1 rotate-[-10deg]    "
                 width={16} // Set your desired width
@@ -204,8 +204,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6 p-28 px-3 w-2/4 mx-auto text-center ">
-          <h1 className="text-2xl font-bold lg:text-4xl">Welcome to My Blog</h1>
+        <div className="flex flex-col gap-6 p-28 px-3 md:w-2/4 mx-auto text-center ">
+          <h1 className="text-3xl font-bold lg:text-4xl">
+            Welcome to Fahad Blog
+          </h1>
           <p className="text-gray-500 lg:text-2xl font-semibold sm:text-sm">
             Life is short, so treasure every moment. Pursue happiness and build
             joyful memories. Live fully and cherish each experience.
@@ -226,7 +228,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/1.png" // Adjust the path based on your project structure
+                src="/shylet.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  ml-10 mt-10    "
                 width={16} // Set your desired width
@@ -240,7 +242,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/2.png" // Adjust the path based on your project structure
+                src="/kuakata.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-24 h-32  mr-6 mt-10 rotate-[10deg]    "
                 width={16} // Set your desired width
@@ -256,7 +258,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/1.png" // Adjust the path based on your project structure
+                src="/haour.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  ml-32 mt-1    "
                 width={16} // Set your desired width
@@ -272,7 +274,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/1.png" // Adjust the path based on your project structure
+                src="/sreemangal.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  mr-10 mt-1     "
                 width={16} // Set your desired width
@@ -286,7 +288,7 @@ export default function Home() {
               whileInView="animate"
             >
               <img
-                src="/2.png" // Adjust the path based on your project structure
+                src="/bandharban.jpg" // Adjust the path based on your project structure
                 alt="about"
                 className="w-28 h-32  mr-3    "
                 width={16} // Set your desired width
