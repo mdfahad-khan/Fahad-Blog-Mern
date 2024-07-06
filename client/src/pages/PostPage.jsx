@@ -59,7 +59,7 @@ export default function PostPage() {
   return (
     <main className="p-3 flex flex-col max-w-6xl mx-auto min-h-screen items-center">
       <div className="flex gap-5">
-        <h1 className="text-xl   text-center font-serif max-w-2xl mx-auto lg:text-2xl">
+        <h1 className="text-[18px]   text-center font-serif max-w-2xl mx-auto lg:text-2xl">
           {post && post.title}
         </h1>
         <Link
@@ -91,7 +91,7 @@ export default function PostPage() {
 
       <div className="flex flex-col justify-center items-center mb-5">
         <h1 className="text-xl mt-5">Recent articles</h1>
-        <div className="grid grid-cols-3 gap-5 mt-5 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5 justify-center">
           {recentPosts &&
             recentPosts.map((post) => <PostCard key={post._id} post={post} />)}
         </div>

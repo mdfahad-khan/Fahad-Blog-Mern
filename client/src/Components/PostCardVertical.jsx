@@ -23,22 +23,24 @@ const PostCardVertical = ({ post }) => {
         <div className="p-3 flex flex-col gap-1 w-full">
           <div className="flex justify-between p-3  mx-auto w-full max-w-full text-md">
             <div className="flex gap-2">
-              <span>
+              <span className="text-[10px] mt-1.5 md:mt-0 md:text-[13px]">
                 {post && new Date(post.createdAt).toLocaleDateString()}
               </span>{" "}
               -
-              <span className="italic text-sm text-blue-[#14385E] font-semibold">
+              <span className="italic text-[10px] mt-1.5 md:mt-0 md:text-[13px] text-blue-[#14385E] font-semibold">
                 {post.category}
               </span>
             </div>
 
-            <span className="italic">
+            <span className="italic text-[10px] mt-1.5 md:mt-0 md:text-[13px]">
               {post && (post.content.length / 1000).toFixed(0)} comments
               {console.log(post.content.length)}
             </span>
           </div>
-          <p className="text-[18px] font-bold line-clamp-2">{post.title}</p>
-          <div className=" pl-3 max-w-3xl mx-auto w-full post-content">
+          <p className=" text-[12px] md:text-[18px] font-bold line-clamp-2 ">
+            {post.title}
+          </p>
+          <div className="text-[11px] md:text-[14px] pl-3 max-w-3xl mx-auto w-full post-content">
             {post && (
               <p
                 dangerouslySetInnerHTML={{
