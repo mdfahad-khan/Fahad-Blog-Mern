@@ -49,26 +49,38 @@ export default function Header() {
   };
 
   return (
-    <Navbar className="bg-[#E4E4D8]">
+    <Navbar className="bg-[#FCFCFC]">
       <Link
         to="/"
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         Fahad Blog
       </Link>
-      <form onSubmit={handleSubmit}>
-        <TextInput
+      <form onSubmit={handleSubmit} className="hidden md:block">
+        <div className="InputContainer ">
+          <input
+            placeholder="Search.."
+            id="input"
+            className="input "
+            name="text"
+            type="text"
+            rightIcon={AiOutlineSearch}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+        {/* <TextInput
           type="text"
           placeholder="Search..."
           rightIcon={AiOutlineSearch}
           className="hidden lg:inline rounded-full"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        /> */}
       </form>
-      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+      {/* <Button className="w-12 h-10 lg:hidden" color="gray" pill>
         <AiOutlineSearch />
-      </Button>
+      </Button> */}
       <div className="flex gap-2 md:order-2 items-center">
         <label className="theme-switch  ">
           <input
@@ -143,19 +155,26 @@ export default function Header() {
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
-          <Link to="/">Home</Link>
+          <Link to="/" className="font-bold text-[16px] ">
+            Home
+          </Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/about"} as={"div"}>
-          <Link to="/about">About</Link>
+          <Link to="/about" className="font-bold text-[16px] ">
+            About
+          </Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects" className="font-bold text-[16px] ">
+            Projects
+          </Link>
         </Navbar.Link>
         <div className={path === "/portfolio" ? "active" : ""} as={"div"}>
           <a
             href="https://fahad-protfolio-v2.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="font-bold text-[16px] "
           >
             Portfolio
           </a>

@@ -103,42 +103,56 @@ export default function Search() {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="p-7 border-b md:border-r md:min-h-screen border-gray-500">
-        <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
-          <div className="flex   items-center gap-2">
-            <label className="whitespace-nowrap font-semibold">
+        <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+          <div className="flex items-center gap-2">
+            <label className="whitespace-nowrap font-semibold text-gray-700  dark:text-gray-400">
               Search Term:
             </label>
-            <TextInput
+            <input
               placeholder="Search..."
               id="searchTerm"
               type="text"
               value={sidebarData.searchTerm}
               onChange={handleChange}
+              className="   dark:bg-gray-600 dark:text-gray-200 p-1 rounded-none w-28 "
             />
           </div>
           <div className="flex items-center gap-2">
-            <label className="font-semibold">Sort:</label>
-            <Select onChange={handleChange} value={sidebarData.sort} id="sort">
+            <label className="font-semibold text-gray-700 dark:text-gray-400">
+              Sort:
+            </label>
+            <select
+              onChange={handleChange}
+              value={sidebarData.sort}
+              id="sort"
+              className=" dark:bg-gray-600 dark:text-gray-200 p-1 rounded-none w-28 justify-end ml-14 "
+            >
               <option value="desc">Latest</option>
               <option value="asc">Oldest</option>
-            </Select>
+            </select>
           </div>
           <div className="flex items-center gap-2">
-            <label className="font-semibold">Category:</label>
-            <Select
+            <label className="font-semibold text-gray-700 text-[[14px]  dark:text-gray-400">
+              Category:
+            </label>
+            <select
               onChange={handleChange}
               value={sidebarData.category}
               id="category"
+              className=" dark:bg-gray-600 ml-5 dark:text-gray-200 p-1 rounded-none w-28"
             >
-              <option value="uncategorized">Uncategorized</option>
+              <option value="uncategorized">Select</option>
               <option value="reactjs">React.js</option>
               <option value="nextjs">Next.js</option>
               <option value="javascript">JavaScript</option>
-            </Select>
+            </select>
           </div>
-          <Button type="submit" outline gradientDuoTone="purpleToPink">
+          <button
+            type="submit"
+            className="py-2 px-4 bg-purple-500 text-white font-semibold rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          >
             Apply Filters
-          </Button>
+          </button>
         </form>
       </div>
       <div className="w-full">
